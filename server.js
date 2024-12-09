@@ -12,6 +12,7 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 // Kết nối MongoDB
 mongoose.connect('mongodb://127.0.0.1:27017/secrets_db', {
